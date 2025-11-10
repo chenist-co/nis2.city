@@ -11,7 +11,7 @@ city: Craiova
 state:
 zip_code: 200143
 country: Romania
-phone: +4 (234) 567-890
+# phone: +4 (234) 567-890
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -23,13 +23,9 @@ tiles-count: 6
 # You need to restart jekyll for changes to have an effect
 socials:
   GitHub: https://github.com/chenist
-  GitLab:
-  Google-Plus:
-  Instagram:
-  LinkedIn: https://linkedin.com/in/chenist
-  Twitter: https://twitter.com/chenist
-  Facebook:
-  Slack:
+  Instagram: https://instagram.com/chenistsec
+  LinkedIn: https://linkedin.com/in/chenistsec
+  Twitter: https://twitter.com/chenistsec
 
 # build settings
 markdown: kramdown
