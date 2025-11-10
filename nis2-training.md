@@ -9,6 +9,11 @@ show_tile: true
 
 ## NIS2 Training & Awareness Programs
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop&crop=center" alt="Professional business training session" style="width: 100%; max-width: 800px; height: 400px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <p style="font-size: 12px; color: #666; margin-top: 8px; font-style: italic;">Professional cybersecurity training environment</p>
+</div>
+
 The NIS2 Directive explicitly mandates cybersecurity training and awareness programs as one of its 10 mandatory security measures. Our comprehensive training services help organizations build a security-conscious workforce while meeting all NIS2 compliance requirements.
 
 ### Why NIS2 Training is Mandatory
@@ -31,12 +36,21 @@ We offer comprehensive training programs designed to meet all NIS2 requirements 
 
 #### 1. Executive & Board Training
 
-**NIS2 Leadership Program**
-- **Target Audience**: C-suite executives, board members, senior management
-- **Duration**: 1-day intensive workshop or 2-session program
-- **Coverage**: NIS2 governance requirements, management responsibilities, strategic oversight
-- **Format**: In-person or virtual interactive sessions
-- **Outcome**: Management certification of NIS2 knowledge and accountability
+<div style="display: flex; align-items: center; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 300px;">
+    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop&crop=center" alt="Executive boardroom meeting" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <h5><strong>NIS2 Leadership Program</strong></h5>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>🎯 Target Audience</strong>: C-suite executives, board members, senior management</li>
+      <li><strong>⏱️ Duration</strong>: 1-day intensive workshop or 2-session program</li>
+      <li><strong>📋 Coverage</strong>: NIS2 governance requirements, management responsibilities, strategic oversight</li>
+      <li><strong>💻 Format</strong>: In-person or virtual interactive sessions</li>
+      <li><strong>🏆 Outcome</strong>: Management certification of NIS2 knowledge and accountability</li>
+    </ul>
+  </div>
+</div>
 
 **Key Topics:**
 - NIS2 Directive overview and organizational applicability
@@ -48,12 +62,21 @@ We offer comprehensive training programs designed to meet all NIS2 requirements 
 
 #### 2. General Workforce Awareness Training
 
-**NIS2 Cybersecurity Awareness Program**
-- **Target Audience**: All employees across the organization
-- **Duration**: Quarterly 2-hour sessions + monthly micro-learning
-- **Coverage**: Practical cybersecurity skills and basic cyber hygiene
-- **Format**: Interactive workshops, e-learning modules, simulations
-- **Outcome**: Organization-wide security culture and compliance readiness
+<div style="display: flex; align-items: center; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 300px;">
+    <h5><strong>NIS2 Cybersecurity Awareness Program</strong></h5>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>👥 Target Audience</strong>: All employees across the organization</li>
+      <li><strong>📅 Duration</strong>: Quarterly 2-hour sessions + monthly micro-learning</li>
+      <li><strong>💡 Coverage</strong>: Practical cybersecurity skills and basic cyber hygiene</li>
+      <li><strong>🎓 Format</strong>: Interactive workshops, e-learning modules, simulations</li>
+      <li><strong>✅ Outcome</strong>: Organization-wide security culture and compliance readiness</li>
+    </ul>
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=250&fit=crop&crop=center" alt="Team training session" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+</div>
 
 **Core Training Modules:**
 - **Basic Cyber Hygiene**: Secure password practices, software updates, device security
@@ -65,12 +88,21 @@ We offer comprehensive training programs designed to meet all NIS2 requirements 
 
 #### 3. Technical Staff Training
 
-**NIS2 Technical Implementation Training**
-- **Target Audience**: IT staff, security teams, system administrators
-- **Duration**: 2-day intensive program + ongoing updates
-- **Coverage**: Technical implementation of NIS2 security measures
-- **Format**: Hands-on workshops, lab exercises, case studies
-- **Outcome**: Technical competency in NIS2 implementation and maintenance
+<div style="display: flex; align-items: center; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 300px;">
+    <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=250&fit=crop&crop=center" alt="Technical cybersecurity training" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <h5><strong>NIS2 Technical Implementation Training</strong></h5>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>🔧 Target Audience</strong>: IT staff, security teams, system administrators</li>
+      <li><strong>⏰ Duration</strong>: 2-day intensive program + ongoing updates</li>
+      <li><strong>🛡️ Coverage</strong>: Technical implementation of NIS2 security measures</li>
+      <li><strong>🧪 Format</strong>: Hands-on workshops, lab exercises, case studies</li>
+      <li><strong>🎖️ Outcome</strong>: Technical competency in NIS2 implementation and maintenance</li>
+    </ul>
+  </div>
+</div>
 
 **Technical Training Areas:**
 - Risk assessment methodologies and tools
@@ -113,30 +145,55 @@ We provide specialized training tailored to specific NIS2-covered sectors:
 
 ### Training Delivery Methods
 
-#### 1. In-Person Training
-- Face-to-face workshops at your location
-- Interactive group exercises and discussions
-- Hands-on practical sessions
-- Real-time Q&A and customization
+<div style="text-align: center; margin: 30px 0;">
+  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=300&fit=crop&crop=center" alt="Modern training delivery methods" style="width: 100%; max-width: 800px; height: 300px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <p style="font-size: 12px; color: #666; margin-top: 8px; font-style: italic;">Flexible training delivery options for modern organizations</p>
+</div>
 
-#### 2. Virtual Training
-- Live online sessions with expert instructors
-- Interactive virtual workshops
-- Remote labs and simulations
-- Global accessibility and convenience
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+  
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff;">
+    <h4 style="color: #007bff; margin-bottom: 15px;">🏢 In-Person Training</h4>
+    <ul style="margin: 0; padding-left: 20px;">
+      <li>Face-to-face workshops at your location</li>
+      <li>Interactive group exercises and discussions</li>
+      <li>Hands-on practical sessions</li>
+      <li>Real-time Q&A and customization</li>
+    </ul>
+  </div>
 
-#### 3. Hybrid Programs
-- Combination of in-person and virtual elements
-- Flexible scheduling to accommodate operations
-- Maximum reach with personal interaction
-- Cost-effective scaling across locations
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #28a745;">
+    <h4 style="color: #28a745; margin-bottom: 15px;">💻 Virtual Training</h4>
+    <ul style="margin: 0; padding-left: 20px;">
+      <li>Live online sessions with expert instructors</li>
+      <li>Interactive virtual workshops</li>
+      <li>Remote labs and simulations</li>
+      <li>Global accessibility and convenience</li>
+    </ul>
+  </div>
 
-#### 4. E-Learning Platform
-- Self-paced online modules
-- Interactive learning content
-- Progress tracking and reporting
-- 24/7 accessibility
-- Mobile-friendly design
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107;">
+    <h4 style="color: #e68900; margin-bottom: 15px;">🔄 Hybrid Programs</h4>
+    <ul style="margin: 0; padding-left: 20px;">
+      <li>Combination of in-person and virtual elements</li>
+      <li>Flexible scheduling to accommodate operations</li>
+      <li>Maximum reach with personal interaction</li>
+      <li>Cost-effective scaling across locations</li>
+    </ul>
+  </div>
+
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #6f42c1;">
+    <h4 style="color: #6f42c1; margin-bottom: 15px;">📱 E-Learning Platform</h4>
+    <ul style="margin: 0; padding-left: 20px;">
+      <li>Self-paced online modules</li>
+      <li>Interactive learning content</li>
+      <li>Progress tracking and reporting</li>
+      <li>24/7 accessibility</li>
+      <li>Mobile-friendly design</li>
+    </ul>
+  </div>
+
+</div>
 
 ### Training Program Features
 
@@ -278,11 +335,29 @@ Our academy offers:
 
 ### Contact Our Training Team
 
-Ready to implement a comprehensive NIS2 training program?
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 20px; border-radius: 12px; text-align: center; margin: 40px 0;">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 300px;">
+      <h3 style="color: white; margin-bottom: 20px;">Ready to implement a comprehensive NIS2 training program?</h3>
+      <p style="font-size: 18px; margin-bottom: 25px; opacity: 0.9;">Transform your workforce into a security-conscious team with our expert-led training programs.</p>
+      <div style="margin-bottom: 20px;">
+        <p><strong>📧 Email</strong>: <a href="mailto:nis2@chen.ist" style="color: #fff; text-decoration: underline;">nis2@chen.ist</a></p>
+        <p><strong>🏢 Office</strong>: Str. Filantropiei, 1-3, 200143, Craiova, Romania</p>
+      </div>
+      <a href="https://cal.com/chenist/nis2?overlayCalendar=true" style="display: inline-block; background: #fff; color: #667eea; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 5px;">📅 Schedule Free Consultation</a>
+    </div>
+    <div style="flex: 0 0 250px; min-width: 250px;">
+      <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=250&h=200&fit=crop&crop=center" alt="Start your training journey" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+    </div>
+  </div>
+</div>
 
-**Email**: [nis2@chen.ist](mailto:nis2@chen.ist)
-**Office**: Str. Filantropiei, 1-3, 200143, Craiova, Romania
-
-We offer free initial consultations to assess your training needs and develop a customized program that meets all NIS2 requirements while building genuine cybersecurity capabilities throughout your organization.
-
-[Contact Us](#contact){: .button}
+<div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+  <h4>🎯 Free Initial Consultation Includes:</h4>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+    <div>✅ Training needs assessment</div>
+    <div>✅ NIS2 requirement mapping</div>
+    <div>✅ Custom program design</div>
+    <div>✅ Implementation roadmap</div>
+  </div>
+</div>
