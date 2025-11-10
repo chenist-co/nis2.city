@@ -335,16 +335,16 @@ Our academy offers:
 
 ### Contact Our Training Team
 
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 20px; border-radius: 12px; text-align: center; margin: 40px 0;">
+<div style="background: #f8f9fa; border: 1px solid #e9ecef; padding: 40px 20px; border-radius: 12px; text-align: center; margin: 40px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
     <div style="flex: 1; min-width: 300px;">
-      <h3 style="color: white; margin-bottom: 20px;">Ready to implement a comprehensive NIS2 training program?</h3>
-      <p style="font-size: 18px; margin-bottom: 25px; opacity: 0.9;">Transform your workforce into a security-conscious team with our expert-led training programs.</p>
+      <h3 style="color: #333; margin-bottom: 20px;">Ready to implement a comprehensive NIS2 training program?</h3>
+      <p style="font-size: 18px; margin-bottom: 25px; color: #666;">Transform your workforce into a security-conscious team with our expert-led training programs.</p>
       <div style="margin-bottom: 20px;">
-        <p><strong>📧 Email</strong>: <a href="mailto:nis2@chen.ist" style="color: #fff; text-decoration: underline;">nis2@chen.ist</a></p>
+        <p><strong>📧 Email</strong>: <a href="mailto:nis2@chen.ist" style="color: #007bff; text-decoration: underline;">nis2@chen.ist</a></p>
         <p><strong>🏢 Office</strong>: Str. Filantropiei, 1-3, 200143, Craiova, Romania</p>
       </div>
-      <a href="https://cal.com/chenist/nis2?overlayCalendar=true" style="display: inline-block; background: #fff; color: #667eea; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 5px;">📅 Schedule Free Consultation</a>
+      <a href="https://cal.com/chenist/nis2?overlayCalendar=true" style="display: inline-block; background: #007bff; color: #fff; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 5px;">📅 Schedule Free Consultation</a>
     </div>
     <div style="flex: 0 0 250px; min-width: 250px;">
       <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=250&h=200&fit=crop&crop=center" alt="Start your training journey" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
