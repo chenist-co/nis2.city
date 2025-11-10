@@ -335,7 +335,7 @@ Our academy offers:
 
 ### Contact Our Training Team
 
-<div style="background: #f8f9fa; border: 1px solid #e9ecef; padding: 40px 20px; border-radius: 12px; text-align: center; margin: 40px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<div style="background: #f8f9fa; border: 1px solid #e9ecef; padding: 40px 20px; text-align: center; margin: 40px 0;">
   <div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
     <div style="flex: 1; min-width: 300px;">
       <h3 style="color: #333; margin-bottom: 20px;">Ready to implement a comprehensive NIS2 training program?</h3>
@@ -352,7 +352,7 @@ Our academy offers:
   </div>
 </div>
 
-<div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+<div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border: 1px solid #e9ecef;">
   <h4>🎯 Free Initial Consultation Includes:</h4>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
     <div>✅ Training needs assessment</div>
