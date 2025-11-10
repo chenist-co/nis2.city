@@ -2,7 +2,7 @@
 layout: post
 title: Virtual CISO Services
 description: Strategic cybersecurity leadership for NIS2 compliance
-image: assets/images/pic02.jpg
+image: /assets/images/pic02.jpg
 nav-menu: true
 show_tile: true
 ---

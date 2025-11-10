@@ -2,7 +2,7 @@
 layout: post
 title: NIS2 Gap Assessment
 description: Identify and prioritize compliance gaps with actionable roadmap
-image: assets/images/pic03.jpg
+image: /assets/images/pic03.jpg
 nav-menu: true
 show_tile: true
 ---

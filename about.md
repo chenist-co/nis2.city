@@ -2,7 +2,7 @@
 layout: post
 title: Our Approach
 description: Our proven methodology for NIS2 compliance success
-image: assets/images/pic04.jpg
+image: /assets/images/pic04.jpg
 nav-menu: true
 show_tile: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: NIS2 Compliance Assessment
 description: Comprehensive evaluation of your organization's compliance status
-image: assets/images/pic01.jpg
+image: /assets/images/pic01.jpg
 nav-menu: true
 show_tile: true
 ---
