@@ -13,18 +13,23 @@
 <nav id="menu">
 	<ul class="links">
         {% for page in site.pages %}
-		    {% if page.layout == "home" %}
+		    {% if page.layout == "home" and page.url == "/" %}
 		        <li><a href="{{ "" | absolute_url }}/">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
 		{% for page in site.html_pages %}
-		    {% if page.layout != "home" and page.nav-menu == true %}
+		    {% if page.layout != "home" and page.nav-menu == true and page.url contains "/ro/" == false and page.url contains "/sv/" == false %}
 		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 		    {% endif %}
 		{% endfor %}
 	</ul>
 	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
+		<li><a href="/#contact" class="button special fit">Get Started</a></li>
+	</ul>
+	<ul class="links">
+		<li><strong>Language / Limba / Språk:</strong></li>
+		<li><a href="{{ "" | absolute_url }}/">🇬🇧 English</a></li>
+		<li><a href="{{ "" | absolute_url }}/ro/">🇷🇴 Română</a></li>
+		<li><a href="{{ "" | absolute_url }}/sv/">🇸🇪 Svenska</a></li>
 	</ul>
 </nav>

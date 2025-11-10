@@ -193,19 +193,7 @@ Starting with our vCISO service is straightforward:
    - Regular touchpoints and reporting
    - Continuous improvement and optimization
 
-### Investment
-
-vCISO service pricing depends on:
-- Engagement model (retainer, project, hybrid)
-- Time allocation (days per month/quarter)
-- Organization size and complexity
-- Specific deliverables and services required
-
-**Typical Ranges**:
-- **Retainer**: €3,000 - €8,000 per month
-- **Project**: €15,000 - €50,000 per project
-- **Hybrid**: Custom pricing based on mix
-
 Contact us for a detailed proposal tailored to your specific needs.
 
-[Schedule Consultation](#contact){: .button .special}
+[Schedule Consultation](https://cal.com/chenist/nis2?overlayCalendar=true){: .button .special}
+

@@ -236,27 +236,6 @@ We don't just hand you a report. We're available to support implementation and a
 #### 6. Tool-Agnostic
 We recommend solutions based on your needs, not vendor relationships. You get unbiased guidance.
 
-### Investment
-
-Gap assessment pricing depends on:
-- Organization size and complexity
-- Number of locations and systems in scope
-- Current documentation maturity
-- Accelerated vs. standard timeline
-- Additional services (policy development, implementation support)
-
-**Typical Pricing Ranges**:
-- **Small Organizations** (50-250 employees): €15,000 - €25,000
-- **Medium Organizations** (250-1000 employees): €25,000 - €45,000
-- **Large Organizations** (1000+ employees): €45,000 - €75,000
-
-All engagements include:
-- Comprehensive gap assessment report
-- Implementation roadmap
-- Cost estimates and resource planning
-- Executive and technical presentations
-- 30 days post-delivery Q&A support
-
 ### After the Gap Assessment
 
 Once you have your gap assessment, common next steps include:
@@ -303,7 +282,8 @@ Ready to understand your NIS2 compliance gaps? We offer:
 
 Contact us today to schedule your consultation.
 
-[Schedule Consultation](#contact){: .button .special}
+[Schedule Consultation](https://cal.com/chenist/nis2?overlayCalendar=true){: .button .special}
+
 
 ### Frequently Asked Questions
 

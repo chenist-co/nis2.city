@@ -121,4 +121,5 @@ Our assessment helps you:
 
 Ready to understand your NIS2 compliance status? Contact us to discuss your assessment needs and receive a detailed proposal.
 
-[Contact Us](#contact){: .button .special}
+[Schedule Consultation](https://cal.com/chenist/nis2?overlayCalendar=true){: .button .special}
+

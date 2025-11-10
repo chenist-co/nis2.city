@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About chen.ist
-description: Expert NIS2 compliance and cybersecurity services
+title: Our Approach
+description: Our proven methodology for NIS2 compliance success
 image: assets/images/pic04.jpg
 nav-menu: true
 show_tile: true
 ---
 
-## About chen.ist
+## Our NIS2 Compliance Approach
 
-chen.ist is a leading provider of innovative technology and education solutions, specializing in cybersecurity compliance and digital resilience. Our NIS2 Compliance Services division helps organizations across Europe navigate the complexities of the NIS2 Directive with confidence.
+We've developed a proven methodology for helping organizations achieve and maintain NIS2 compliance efficiently and effectively. Our approach is built on years of experience with EU cybersecurity regulations and deep understanding of business operations.
 
 ### Our Mission
 
@@ -97,7 +97,6 @@ Our NIS2 compliance team includes:
 Ready to discuss your NIS2 compliance needs?
 
 **Email**: [nis2@chen.ist](mailto:nis2@chen.ist)
-**Phone**: +4 (234) 567-890
 **Office**: Str. Filantropiei, 1-3, 200143, Craiova, Romania
 
 We offer free initial consultations to discuss your specific situation and how we can help.
@@ -106,6 +105,6 @@ We offer free initial consultations to discuss your specific situation and how w
 
 ---
 
-### Parent Organization
+### About Our Company
 
-This NIS2 Compliance Services division is part of chen.ist, a broader technology and education company. Learn more about our other services at [chen.ist](https://chen.ist).
+This NIS2 Compliance Services division is part of chen.ist. For detailed company information and our broader technology and education services, visit [chen.ist/about](https://chen.ist/about).

@@ -1,0 +1,68 @@
+<!-- Language Switcher -->
+<div style="text-align: right; padding: 10px 0; margin-bottom: 20px;">
+    {% assign current_page = page.url %}
+    {% assign page_name = current_page | split: '/' | last | split: '.' | first %}
+    
+    <!-- Determine page type for proper linking -->
+    {% assign page_type = 'home' %}
+    {% if page_name == 'abordarea-noastra' or page_name == 'var-metod' or current_page contains 'about.html' %}
+        {% assign page_type = 'about' %}
+    {% elsif page_name == 'evaluare-nis2' or page_name == 'nis2-bedomning' or current_page contains 'nis2-assessment.html' %}
+        {% assign page_type = 'nis2-assessment' %}
+    {% elsif page_name == 'analiza-lacunelor' or page_name == 'gap-analys' or current_page contains 'gap-assessment.html' %}
+        {% assign page_type = 'gap-assessment' %}
+    {% elsif page_name == 'servicii-ciso' or page_name == 'ciso-tjanster' or current_page contains 'ciso-service.html' %}
+        {% assign page_type = 'ciso-service' %}
+    {% endif %}
+    
+    <!-- English -->
+    {% if current_page contains '/ro/' or current_page contains '/sv/' %}
+        {% if page_type == 'home' %}
+            <a href="{{ site.baseurl }}/" title="English" style="text-decoration: none; margin: 0 5px;">🇬🇧</a>
+        {% elsif page_type == 'about' %}
+            <a href="{{ site.baseurl }}/about.html" title="English" style="text-decoration: none; margin: 0 5px;">🇬🇧</a>
+        {% elsif page_type == 'nis2-assessment' %}
+            <a href="{{ site.baseurl }}/nis2-assessment.html" title="English" style="text-decoration: none; margin: 0 5px;">🇬🇧</a>
+        {% elsif page_type == 'gap-assessment' %}
+            <a href="{{ site.baseurl }}/gap-assessment.html" title="English" style="text-decoration: none; margin: 0 5px;">🇬🇧</a>
+        {% elsif page_type == 'ciso-service' %}
+            <a href="{{ site.baseurl }}/ciso-service.html" title="English" style="text-decoration: none; margin: 0 5px;">🇬🇧</a>
+        {% endif %}
+    {% else %}
+        <span title="English" style="margin: 0 5px;">🇬🇧</span>
+    {% endif %}
+    
+    <!-- Romanian -->
+    {% unless current_page contains '/ro/' %}
+        {% if page_type == 'home' %}
+            <a href="{{ site.baseurl }}/ro/" title="Română" style="text-decoration: none; margin: 0 5px;">🇷🇴</a>
+        {% elsif page_type == 'about' %}
+            <a href="{{ site.baseurl }}/ro/abordarea-noastra.html" title="Română" style="text-decoration: none; margin: 0 5px;">🇷🇴</a>
+        {% elsif page_type == 'nis2-assessment' %}
+            <a href="{{ site.baseurl }}/ro/evaluare-nis2.html" title="Română" style="text-decoration: none; margin: 0 5px;">🇷🇴</a>
+        {% elsif page_type == 'gap-assessment' %}
+            <a href="{{ site.baseurl }}/ro/analiza-lacunelor.html" title="Română" style="text-decoration: none; margin: 0 5px;">🇷🇴</a>
+        {% elsif page_type == 'ciso-service' %}
+            <a href="{{ site.baseurl }}/ro/servicii-ciso.html" title="Română" style="text-decoration: none; margin: 0 5px;">🇷🇴</a>
+        {% endif %}
+    {% else %}
+        <span title="Română" style="margin: 0 5px;">🇷🇴</span>
+    {% endunless %}
+    
+    <!-- Swedish -->
+    {% unless current_page contains '/sv/' %}
+        {% if page_type == 'home' %}
+            <a href="{{ site.baseurl }}/sv/" title="Svenska" style="text-decoration: none; margin: 0 5px;">🇸🇪</a>
+        {% elsif page_type == 'about' %}
+            <a href="{{ site.baseurl }}/sv/var-metod.html" title="Svenska" style="text-decoration: none; margin: 0 5px;">🇸🇪</a>
+        {% elsif page_type == 'nis2-assessment' %}
+            <a href="{{ site.baseurl }}/sv/nis2-bedomning.html" title="Svenska" style="text-decoration: none; margin: 0 5px;">🇸🇪</a>
+        {% elsif page_type == 'gap-assessment' %}
+            <a href="{{ site.baseurl }}/sv/gap-analys.html" title="Svenska" style="text-decoration: none; margin: 0 5px;">🇸🇪</a>
+        {% elsif page_type == 'ciso-service' %}
+            <a href="{{ site.baseurl }}/sv/ciso-tjanster.html" title="Svenska" style="text-decoration: none; margin: 0 5px;">🇸🇪</a>
+        {% endif %}
+    {% else %}
+        <span title="Svenska" style="margin: 0 5px;">🇸🇪</span>
+    {% endunless %}
+</div>
