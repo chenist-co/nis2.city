@@ -3,9 +3,17 @@
 {% elsif 'pages' == site.tiles-source %}
     {% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false" %}
 {% endif %}
+
+<!-- Filter English pages first, then limit -->
+{% assign english_tiles = '' | split: '' %}
+{% for tile in tiles %}
+  {% unless tile.url contains '/ro/' or tile.url contains '/sv/' or tile.url contains '/de/' %}
+    {% assign english_tiles = english_tiles | push: tile %}
+  {% endunless %}
+{% endfor %}
+
 <section id="one" class="tiles">
-  {% for tile in tiles limit:site.tiles-count %}
-    {% unless tile.url contains '/ro/' or tile.url contains '/sv/' or tile.url contains '/de/' %}
+  {% for tile in english_tiles limit:site.tiles-count %}
     <article>
       <span class="image">
         <img src="{{ tile.image }}" alt="{{ tile.title }}" />
@@ -15,6 +23,5 @@
         <p>{{ tile.description }}</p>
       </header>
     </article>
-    {% endunless %}
   {% endfor %}
 </section>
