@@ -11,6 +11,18 @@ show_tile: true
 
 Wir haben eine bewährte Methodik entwickelt, um Organisationen dabei zu helfen, NIS2-Compliance effizient und effektiv zu erreichen und aufrechtzuerhalten. Unser Ansatz basiert auf jahrelanger Erfahrung mit EU-Cybersicherheitsvorschriften und einem tiefen Verständnis für Geschäftsabläufe.
 
+### Über die NIS2-Richtlinie
+
+Die [NIS2-Richtlinie (EU) 2022/2555](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32022L2555) etabliert Maßnahmen für ein hohes gemeinsames Cybersicherheitsniveau in der gesamten Europäischen Union. Diese Richtlinie, die die ursprüngliche NIS-Richtlinie von 2016 ersetzt, erweitert erheblich den Anwendungsbereich und die Anforderungen für Cybersicherheits-Compliance.
+
+**Hauptaspekte von NIS2:**
+- **Erweiterte Abdeckung**: Gilt für mittlere und große Unternehmen in kritischen Sektoren wie Energie, Transport, Gesundheitswesen, digitale Infrastruktur und öffentliche Verwaltung
+- **Verschärfte Anforderungen**: Schreibt umfassende Cybersicherheits-Risikomanagement-Maßnahmen, Incident-Reporting und Business-Continuity-Planung vor
+- **Stärkere Governance**: Erfordert Management-Verantwortlichkeit für Cybersicherheitsmaßnahmen und regelmäßige Berichterstattung an Behörden
+- **Erhebliche Strafen**: Führt substantielle finanzielle Strafen für Nichteinhaltung ein, bis zu €10 Millionen oder 2% des weltweiten Umsatzes
+
+Die Richtlinie zielt darauf ab, einen einheitlicheren und robusteren Cybersicherheitsansatz in allen EU-Mitgliedstaaten zu schaffen und sicherzustellen, dass wesentliche Dienste sicher und widerstandsfähig gegen sich entwickelnde Cyber-Bedrohungen bleiben.
+
 ### Unsere Mission
 
 Wir glauben, dass Cybersicherheits-Compliance Organisationen stärken und nicht belasten sollte. Unsere Mission ist es, wesentlichen und wichtigen Einrichtungen dabei zu helfen, NIS2-Compliance zu erreichen und aufrechtzuerhalten, während wir gleichzeitig robuste Sicherheitsprogramme aufbauen, die ihr Geschäft und ihre Kunden schützen.

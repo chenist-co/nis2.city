@@ -11,6 +11,18 @@ show_tile: true
 
 Am dezvoltat o metodologie dovedită pentru a ajuta organizațiile să obțină și să păstreze conformitatea NIS2 într-un mod eficient și practic. Abordarea noastră se bazează pe ani de experiență cu reglementările europene de securitate cibernetică și pe o înțelegere profundă a modului în care funcționează afacerile în realitate.
 
+### Despre Directiva NIS2
+
+[Directiva NIS2 (UE) 2022/2555](https://eur-lex.europa.eu/legal-content/RO/TXT/?uri=CELEX:32022L2555) stabilește măsuri pentru un nivel înalt și comun de securitate cibernetică în întreaga Uniune Europeană. Această directivă, care înlocuiește Directiva NIS originală din 2016, extinde semnificativ domeniul de aplicare și cerințele pentru conformitatea de securitate cibernetică.
+
+**Aspecte cheie ale NIS2:**
+- **Acoperire Extinsă**: Se aplică întreprinderilor mijlocii și mari din sectoarele critice, inclusiv energia, transporturile, sănătatea, infrastructura digitală și administrația publică
+- **Cerințe Întărite**: Impune măsuri cuprinzătoare de management al riscurilor de securitate cibernetică, raportarea incidentelor și planificarea continuității afacerilor
+- **Guvernanță Consolidată**: Necesită responsabilitatea managementului pentru măsurile de securitate cibernetică și raportarea regulată către autorități
+- **Sancțiuni Semnificative**: Introduce penalități financiare substanțiale pentru neconformitate, până la €10 milioane sau 2% din cifra de afaceri globală
+
+Directiva își propune să creeze o abordare mai unificată și mai robustă a securității cibernetice în toate statele membre UE, asigurând că serviciile esențiale rămân sigure și reziliente împotriva amenințărilor cibernetice în evoluție.
+
 ### Misiunea Noastră
 
 Credem că conformitatea de securitate cibernetică ar trebui să întărească organizațiile, nu să le complice existența. Misiunea noastră este să ajutăm entitățile esențiale și importante să obțină și să mențină conformitatea NIS2, construind totodată programe solide de securitate care să le protejeze afacerile și clienții.

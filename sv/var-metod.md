@@ -11,6 +11,18 @@ show_tile: true
 
 Vi har utvecklat en beprövad metodik för att hjälpa organisationer att uppnå och bibehålla NIS2-efterlevnad på ett effektivt sätt. Vår approach bygger på mångårig erfarenhet av EU:s cybersäkerhetsreglering och djup förståelse för hur verksamheter faktiskt fungerar.
 
+### Om NIS2-direktivet
+
+[NIS2-direktivet (EU) 2022/2555](https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=CELEX:32022L2555) fastställer åtgärder för en hög gemensam nivå av cybersäkerhet i hela Europeiska unionen. Detta direktiv, som ersätter det ursprungliga NIS-direktivet från 2016, utökar avsevärt omfattningen och kraven för cybersäkerhetsefterlevnad.
+
+**Huvudaspekter av NIS2:**
+- **Utökad täckning**: Gäller medelstora och stora företag inom kritiska sektorer inklusive energi, transport, hälso- och sjukvård, digital infrastruktur och offentlig förvaltning
+- **Förstärkta krav**: Kräver omfattande cybersäkerhetsriskhanteringsåtgärder, incidentrapportering och planering för verksamhetskontinuitet
+- **Stärkt styrning**: Kräver ledningsansvar för cybersäkerhetsåtgärder och regelbunden rapportering till myndigheter
+- **Betydande påföljder**: Inför avsevärda ekonomiska straff för bristande efterlevnad, upp till €10 miljoner eller 2% av global omsättning
+
+Direktivet syftar till att skapa en mer enhetlig och robust cybersäkerhetsansats i alla EU-medlemsstater, för att säkerställa att väsentliga tjänster förblir säkra och motståndskraftiga mot utvecklande cyberhot.
+
 ### Vårt Uppdrag
 
 Vi anser att cybersäkerhetsefterlevnad ska stärka organisationer, inte vara en börda. Vårt uppdrag är att hjälpa väsentliga och viktiga enheter att uppnå och bibehålla NIS2-efterlevnad samtidigt som vi bygger upp solida säkerhetsprogram som verkligen skyddar deras verksamhet och kunder.

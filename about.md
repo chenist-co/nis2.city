@@ -11,6 +11,18 @@ show_tile: true
 
 We've developed a proven methodology for helping organizations achieve and maintain NIS2 compliance efficiently and effectively. Our approach is built on years of experience with EU cybersecurity regulations and deep understanding of business operations.
 
+### About the NIS2 Directive
+
+The [NIS2 Directive (EU) 2022/2555](https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng) establishes measures for a high common level of cybersecurity across the European Union. This directive, which replaces the original NIS Directive from 2016, significantly expands the scope and requirements for cybersecurity compliance.
+
+**Key aspects of NIS2:**
+- **Expanded Coverage**: Applies to medium and large enterprises across critical sectors including energy, transport, healthcare, digital infrastructure, and public administration
+- **Enhanced Requirements**: Mandates comprehensive cybersecurity risk management measures, incident reporting, and business continuity planning
+- **Stronger Governance**: Requires management accountability for cybersecurity measures and regular reporting to authorities
+- **Significant Penalties**: Introduces substantial financial penalties for non-compliance, up to €10 million or 2% of global turnover
+
+The directive aims to create a more unified and robust cybersecurity approach across all EU member states, ensuring essential services remain secure and resilient against evolving cyber threats.
+
 ### Our Mission
 
 We believe that cybersecurity compliance should strengthen organizations, not burden them. Our mission is to help essential and important entities achieve and maintain NIS2 compliance while building robust security programs that protect their business and customers.
