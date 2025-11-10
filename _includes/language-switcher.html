@@ -5,18 +5,18 @@
     
     <!-- Determine page type for proper linking -->
     {% assign page_type = 'home' %}
-    {% if page_name == 'abordarea-noastra' or page_name == 'var-metod' or current_page contains 'about.html' %}
+    {% if page_name == 'abordarea-noastra' or page_name == 'var-metod' or page_name == 'unser-ansatz' or current_page contains 'about.html' %}
         {% assign page_type = 'about' %}
-    {% elsif page_name == 'evaluare-nis2' or page_name == 'nis2-bedomning' or current_page contains 'nis2-assessment.html' %}
+    {% elsif page_name == 'evaluare-nis2' or page_name == 'nis2-bedomning' or page_name == 'nis2-bewertung' or current_page contains 'nis2-assessment.html' %}
         {% assign page_type = 'nis2-assessment' %}
-    {% elsif page_name == 'analiza-lacunelor' or page_name == 'gap-analys' or current_page contains 'gap-assessment.html' %}
+    {% elsif page_name == 'analiza-lacunelor' or page_name == 'gap-analys' or page_name == 'gap-analyse' or current_page contains 'gap-assessment.html' %}
         {% assign page_type = 'gap-assessment' %}
-    {% elsif page_name == 'servicii-ciso' or page_name == 'ciso-tjanster' or current_page contains 'ciso-service.html' %}
+    {% elsif page_name == 'servicii-ciso' or page_name == 'ciso-tjanster' or page_name == 'ciso-services' or current_page contains 'ciso-service.html' %}
         {% assign page_type = 'ciso-service' %}
     {% endif %}
     
     <!-- English -->
-    {% if current_page contains '/ro/' or current_page contains '/sv/' %}
+    {% if current_page contains '/ro/' or current_page contains '/sv/' or current_page contains '/de/' %}
         {% if page_type == 'home' %}
             <a href="{{ site.baseurl }}/" title="English" style="text-decoration: none; margin: 0 5px;">🇬🇧</a>
         {% elsif page_type == 'about' %}
@@ -64,5 +64,22 @@
         {% endif %}
     {% else %}
         <span title="Svenska" style="margin: 0 5px;">🇸🇪</span>
+    {% endunless %}
+    
+    <!-- German -->
+    {% unless current_page contains '/de/' %}
+        {% if page_type == 'home' %}
+            <a href="{{ site.baseurl }}/de/" title="Deutsch" style="text-decoration: none; margin: 0 5px;">🇩🇪</a>
+        {% elsif page_type == 'about' %}
+            <a href="{{ site.baseurl }}/de/unser-ansatz.html" title="Deutsch" style="text-decoration: none; margin: 0 5px;">🇩🇪</a>
+        {% elsif page_type == 'nis2-assessment' %}
+            <a href="{{ site.baseurl }}/de/nis2-bewertung.html" title="Deutsch" style="text-decoration: none; margin: 0 5px;">🇩🇪</a>
+        {% elsif page_type == 'gap-assessment' %}
+            <a href="{{ site.baseurl }}/de/gap-analyse.html" title="Deutsch" style="text-decoration: none; margin: 0 5px;">🇩🇪</a>
+        {% elsif page_type == 'ciso-service' %}
+            <a href="{{ site.baseurl }}/de/ciso-services.html" title="Deutsch" style="text-decoration: none; margin: 0 5px;">🇩🇪</a>
+        {% endif %}
+    {% else %}
+        <span title="Deutsch" style="margin: 0 5px;">🇩🇪</span>
     {% endunless %}
 </div>
