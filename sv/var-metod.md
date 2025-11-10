@@ -9,11 +9,11 @@ show_tile: true
 
 ## Vår NIS2-efterlevnadsmetod
 
-Vi har utvecklat en beprövad metodik för att hjälpa organisationer att uppnå och upprätthålla NIS2-efterlevnad effektivt. Vår metod bygger på års erfarenhet av EU:s cybersäkerhetsregler och djup förståelse för affärsverksamhet.
+Vi har utvecklat en beprövad metodik för att hjälpa organisationer att uppnå och bibehålla NIS2-efterlevnad på ett effektivt sätt. Vår approach bygger på mångårig erfarenhet av EU:s cybersäkerhetsreglering och djup förståelse för hur verksamheter faktiskt fungerar.
 
 ### Vårt Uppdrag
 
-Vi tror att cybersäkerhetsefterlevnad borde stärka organisationer, inte belasta dem. Vårt uppdrag är att hjälpa väsentliga och viktiga enheter att uppnå och upprätthålla NIS2-efterlevnad samtidigt som vi bygger robusta säkerhetsprogram som skyddar deras verksamhet och kunder.
+Vi anser att cybersäkerhetsefterlevnad ska stärka organisationer, inte vara en börda. Vårt uppdrag är att hjälpa väsentliga och viktiga enheter att uppnå och bibehålla NIS2-efterlevnad samtidigt som vi bygger upp solida säkerhetsprogram som verkligen skyddar deras verksamhet och kunder.
 
 ### Varför Välja Oss
 

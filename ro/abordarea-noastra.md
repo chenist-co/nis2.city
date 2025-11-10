@@ -9,11 +9,11 @@ show_tile: true
 
 ## Abordarea Noastră pentru Conformitatea NIS2
 
-Am dezvoltat o metodologie dovedită pentru a ajuta organizațiile să atingă și să mențină conformitatea NIS2 eficient și efectiv. Abordarea noastră este construită pe ani de experiență cu reglementările de securitate cibernetică ale UE și înțelegerea profundă a operațiunilor de afaceri.
+Am dezvoltat o metodologie dovedită pentru a ajuta organizațiile să obțină și să păstreze conformitatea NIS2 într-un mod eficient și practic. Abordarea noastră se bazează pe ani de experiență cu reglementările europene de securitate cibernetică și pe o înțelegere profundă a modului în care funcționează afacerile în realitate.
 
 ### Misiunea Noastră
 
-Credem că conformitatea de securitate cibernetică ar trebui să întărească organizațiile, nu să le îngreuneze. Misiunea noastră este să ajutăm entitățile esențiale și importante să atingă și să mențină conformitatea NIS2 construind în același timp programe robuste de securitate care să le protejeze afacerea și clienții.
+Credem că conformitatea de securitate cibernetică ar trebui să întărească organizațiile, nu să le complice existența. Misiunea noastră este să ajutăm entitățile esențiale și importante să obțină și să mențină conformitatea NIS2, construind totodată programe solide de securitate care să le protejeze afacerile și clienții.
 
 ### De Ce Să Ne Alegeți
 
