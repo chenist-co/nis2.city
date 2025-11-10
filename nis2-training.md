@@ -38,7 +38,7 @@ We offer comprehensive training programs designed to meet all NIS2 requirements 
 
 <div style="display: flex; align-items: center; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 300px;">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop&crop=center" alt="Executive boardroom meeting" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=250&fit=crop&crop=center" alt="Executive boardroom meeting" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
   <div style="flex: 1; min-width: 300px;">
     <h5><strong>NIS2 Leadership Program</strong></h5>
@@ -152,9 +152,9 @@ We provide specialized training tailored to specific NIS2-covered sectors:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
   
-  <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff;">
+  <div style="background: #000; padding: 20px; border-radius: 8px; border-left: 4px solid #007bff;">
     <h4 style="color: #007bff; margin-bottom: 15px;">🏢 In-Person Training</h4>
-    <ul style="margin: 0; padding-left: 20px;">
+    <ul style="margin: 0; padding-left: 20px; color: #fff;">
       <li>Face-to-face workshops at your location</li>
       <li>Interactive group exercises and discussions</li>
       <li>Hands-on practical sessions</li>
@@ -162,9 +162,9 @@ We provide specialized training tailored to specific NIS2-covered sectors:
     </ul>
   </div>
 
-  <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #28a745;">
+  <div style="background: #000; padding: 20px; border-radius: 8px; border-left: 4px solid #28a745;">
     <h4 style="color: #28a745; margin-bottom: 15px;">💻 Virtual Training</h4>
-    <ul style="margin: 0; padding-left: 20px;">
+    <ul style="margin: 0; padding-left: 20px; color: #fff;">
       <li>Live online sessions with expert instructors</li>
       <li>Interactive virtual workshops</li>
       <li>Remote labs and simulations</li>
@@ -172,9 +172,9 @@ We provide specialized training tailored to specific NIS2-covered sectors:
     </ul>
   </div>
 
-  <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107;">
+  <div style="background: #000; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc107;">
     <h4 style="color: #e68900; margin-bottom: 15px;">🔄 Hybrid Programs</h4>
-    <ul style="margin: 0; padding-left: 20px;">
+    <ul style="margin: 0; padding-left: 20px; color: #fff;">
       <li>Combination of in-person and virtual elements</li>
       <li>Flexible scheduling to accommodate operations</li>
       <li>Maximum reach with personal interaction</li>
@@ -182,9 +182,9 @@ We provide specialized training tailored to specific NIS2-covered sectors:
     </ul>
   </div>
 
-  <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #6f42c1;">
-    <h4 style="color: #6f42c1; margin-bottom: 15px;">📱 E-Learning Platform</h4>
-    <ul style="margin: 0; padding-left: 20px;">
+  <div style="background: #000; padding: 20px; border-radius: 8px; border-left: 4px solid #6f42c1;">
+    <h4 style="color: #6f42c1; margin-bottom: 15px;">📱 E-Learning Platform (Still in Early Development Stage)</h4>
+    <ul style="margin: 0; padding-left: 20px; color: #fff;">
       <li>Self-paced online modules</li>
       <li>Interactive learning content</li>
       <li>Progress tracking and reporting</li>
@@ -335,15 +335,11 @@ Our academy offers:
 
 ### Contact Our Training Team
 
-<div style="background: #f8f9fa; border: 1px solid #e9ecef; padding: 40px 20px; text-align: center; margin: 40px 0;">
+<div style="background: #000; border: 1px solid #333; padding: 40px 20px; text-align: center; margin: 40px 0;">
   <div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
     <div style="flex: 1; min-width: 300px;">
-      <h3 style="color: #333; margin-bottom: 20px;">Ready to implement a comprehensive NIS2 training program?</h3>
-      <p style="font-size: 18px; margin-bottom: 25px; color: #666;">Transform your workforce into a security-conscious team with our expert-led training programs.</p>
-      <div style="margin-bottom: 20px;">
-        <p><strong>📧 Email</strong>: <a href="mailto:nis2@chen.ist" style="color: #007bff; text-decoration: underline;">nis2@chen.ist</a></p>
-        <p><strong>🏢 Office</strong>: Str. Filantropiei, 1-3, 200143, Craiova, Romania</p>
-      </div>
+      <h3 style="color: #fff; margin-bottom: 20px;">Ready to implement a comprehensive NIS2 training program?</h3>
+      <p style="font-size: 18px; margin-bottom: 25px; color: #ccc;">Transform your workforce into a security-conscious team with our expert-led training programs.</p>
       <a href="https://cal.com/chenist/nis2?overlayCalendar=true" style="display: inline-block; background: #007bff; color: #fff; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 5px;">📅 Schedule Free Consultation</a>
     </div>
     <div style="flex: 0 0 250px; min-width: 250px;">
@@ -352,9 +348,9 @@ Our academy offers:
   </div>
 </div>
 
-<div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border: 1px solid #e9ecef;">
-  <h4>🎯 Free Initial Consultation Includes:</h4>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+<div style="text-align: center; margin: 30px 0; padding: 20px; background: #000; border: 1px solid #333; color: #fff;">
+  <h4 style="color: #fff;">🎯 Free Initial Consultation Includes:</h4>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; color: #fff;">
     <div>✅ Training needs assessment</div>
     <div>✅ NIS2 requirement mapping</div>
     <div>✅ Custom program design</div>
