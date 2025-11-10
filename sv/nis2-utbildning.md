@@ -27,6 +27,8 @@ NIS2-direktivet kräver explicit cybersäkerhetsutbildning och medvetenhetssprog
 
 Vi erbjuder omfattande utbildningsprogram utformade för att uppfylla alla NIS2-krav samtidigt som vi bygger genuin cybersäkerhetsmedvetenhet i hela organisationen.
 
+> **Utbildningsspråkstillgänglighet**: För närvarande finns våra NIS2-utbildningsprogram tillgängliga på **engelska** och **rumänska**. Vi arbetar aktivt med att utöka vårt utbildningsutbud till ytterligare språk och kommer att tillhandahålla uppdateringar snart.
+
 #### 1. Lednings- & Styrelseträning
 
 **NIS2-Ledarskapsprogram**

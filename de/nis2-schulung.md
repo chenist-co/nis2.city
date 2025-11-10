@@ -27,6 +27,8 @@ Die [NIS2-Richtlinie (EU) 2022/2555](https://eur-lex.europa.eu/legal-content/DE/
 
 Wir bieten umfassende Schulungsprogramme, die darauf ausgelegt sind, alle NIS2-Anforderungen zu erfüllen und gleichzeitig echtes Cybersicherheitsbewusstsein in Ihrer gesamten Organisation aufzubauen.
 
+> **Verfügbarkeit der Schulungssprachen**: Derzeit sind unsere NIS2-Schulungsprogramme in **Englisch** und **Rumänisch** verfügbar. Wir arbeiten aktiv daran, unser Schulungsangebot auf weitere Sprachen zu erweitern und werden bald Updates bereitstellen.
+
 #### 1. Führungskräfte- & Vorstand-Schulungen
 
 **NIS2-Leadership-Programm**

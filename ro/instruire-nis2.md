@@ -27,6 +27,8 @@ Directiva NIS2 impune în mod explicit programe de instruire în securitate cibe
 
 Oferim programe de instruire cuprinzătoare concepute să îndeplinească toate cerințele NIS2, construind în același timp conștientizare genuină a securității cibernetice în întreaga organizație.
 
+> **Disponibilitatea limbilor de instruire**: În prezent, programele noastre de instruire NIS2 sunt disponibile în **engleză** și **română**. Lucrăm activ la extinderea ofertei noastre de instruire către limbi suplimentare și vom oferi actualizări în curând.
+
 #### 1. Instruire pentru Conducere & Consiliul de Administrație
 
 **Programul de Leadership NIS2**

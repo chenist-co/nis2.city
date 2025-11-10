@@ -27,6 +27,8 @@ The [NIS2 Directive (EU) 2022/2555](https://eur-lex.europa.eu/eli/dir/2022/2555/
 
 We offer comprehensive training programs designed to meet all NIS2 requirements while building genuine cybersecurity awareness throughout your organization.
 
+> **Training Language Availability**: Currently, our NIS2 training programs are available in **English** and **Romanian**. We are actively working on expanding our training offerings to additional languages and will provide updates soon.
+
 #### 1. Executive & Board Training
 
 **NIS2 Leadership Program**
