@@ -3,10 +3,12 @@ layout: post
 title: Ce este NIS2
 description: Ghidul complet pentru înțelegerea și implementarea Directivei NIS2 în România
 image: /assets/images/pic04.jpg
-nav-menu: true
-show_tile: true
+nav-menu: false
+show_tile: false
+published: false
 ---
 
+<!-- 
 ## Directiva NIS2: Ghidul Complet pentru Organizațiile din România
 
 Directiva NIS2 (Directiva (UE) 2022/2555) este cea mai importantă legislație europeană în domeniul securității cibernetice, care stabilește măsuri pentru un nivel ridicat comun de securitate cibernetică în Uniunea Europeană.
@@ -196,3 +198,4 @@ Pentru informații suplimentare și suport în procesul de conformitate NIS2:
 ---
 
 *Această pagină oferă informații generale despre NIS2. Pentru consiliere specifică organizației dvs., contactați-ne.*
+-->
