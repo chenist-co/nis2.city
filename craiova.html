@@ -1,0 +1,233 @@
+---
+layout: landing
+title: Evenimente NIS2 în Craiova
+description: 'Participă la workshopurile NIS2 din Craiova - Evenimente gratuite de securitate cibernetică'
+nav-menu: false
+---
+
+<style>
+.event-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.event-container:nth-child(even) {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.event-map {
+    flex: 1;
+    min-width: 0;
+}
+
+.event-map iframe {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.event-map {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-map iframe {
+    margin-bottom: -5px;
+}
+
+.event-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event-details {
+    margin-bottom: 1rem;
+}
+
+.event-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.event-sector {
+    background: #007acc;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.event-date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.event-venue {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.event-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .event-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .event-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.city-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+}
+
+.city-intro h1 {
+    color: #007acc;
+    margin-bottom: 1rem;
+}
+
+.city-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+</style>
+
+<!-- Main -->
+<div id="main" class="alt">
+    <!-- One -->
+    <section id="one">
+        <div class="inner">
+            
+            <div class="city-intro">
+                <h1>🏛️ Evenimente NIS2 în Craiova</h1>
+                <p>Directoratul Național de Securitate Cibernetică (DNSC) organizează workshopuri gratuite dedicate implementării NIS2 în Craiova. Participă la sesiunile interactive și află cum să îți pregătești organizația pentru conformitatea NIS2.</p>
+            </div>
+
+            <div id="events-container">
+                {% assign craiova_events = site.events | where: "city", "Craiova" | sort: "date" %}
+                
+                {% if craiova_events.size == 0 %}
+                    <div style="text-align: center; padding: 3rem 1rem; color: rgba(255,255,255,0.6);">
+                        <h3>📅 Nu sunt evenimente programate în acest moment</h3>
+                        <p>Verifică din nou în curând pentru actualizări despre viitoarele workshopuri NIS2 din Craiova.</p>
+                        <p><a href="/events.html" class="btn-secondary">Vezi toate evenimentele</a></p>
+                    </div>
+                {% endif %}
+                
+                {% for event in craiova_events %}
+                <div class="event-container">
+                    <div class="event-map">
+                        {% if event.venue_lat and event.venue_lng %}
+                        <iframe 
+                            width="100%" 
+                            height="200"
+                            frameborder="0" 
+                            scrolling="no" 
+                            marginheight="0" 
+                            marginwidth="0" 
+                            src="https://www.openstreetmap.org/export/embed.html?bbox={{ event.venue_lng | minus: 0.01 }},{{ event.venue_lat | minus: 0.01 }},{{ event.venue_lng | plus: 0.01 }},{{ event.venue_lat | plus: 0.01 }}&amp;layer=mapnik&amp;marker={{ event.venue_lat }},{{ event.venue_lng }}">
+                        </iframe>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="event-info">
+                        <div class="event-details">
+                            <h3><a href="{{ event.url }}" style="color: white; text-decoration: none;">{{ event.title }}</a></h3>
+                            
+                            <div class="event-meta">
+                                <div class="event-date">
+                                    <span class="icon alt fa-calendar"></span>
+                                    <span>{{ event.date | date: "%-d %B %Y" }}{% if event.end_date %} - {{ event.end_date | date: "%-d %B %Y" }}{% endif %}</span>
+                                </div>
+                                
+                                <span class="event-sector">{{ event.sector }}</span>
+                            </div>
+                            
+                            <div class="event-venue">
+                                <span class="icon alt fa-map-marker"></span>
+                                <span>{{ event.venue }}</span>
+                            </div>
+                            
+                            {% if event.venue_address %}
+                            <div style="margin-top: 0.5rem; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                                📍 {{ event.venue_address }}
+                            </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="event-actions">
+                            <a href="{{ event.url }}" class="btn-secondary">
+                                📋 Vezi Detalii
+                            </a>
+                            {% if event.registration_url %}
+                            <a href="{{ event.registration_url }}" class="btn-secondary" target="_blank">
+                                📝 Înregistrare DNSC
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Call to Action -->
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(0, 120, 204, 0.1); border-radius: 8px; border: 1px solid rgba(0, 120, 204, 0.3);">
+                <h3 style="color: #007acc; margin-bottom: 1rem;">🎯 Pregătește-te pentru NIS2</h3>
+                <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.8);">
+                    Workshopurile sunt gratuite și se adresează tuturor organizațiilor care trebuie să respecte cerințele NIS2.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="/about.html" class="btn-secondary">📖 Ce este NIS2?</a>
+                    <a href="/events.html" class="btn-secondary">🗺️ Toate Evenimentele</a>
+                    <a href="/#contact" class="btn-secondary">📞 Contactează-ne</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
