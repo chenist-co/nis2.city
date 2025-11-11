@@ -4,10 +4,10 @@
     {% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false" %}
 {% endif %}
 
-<!-- Filter Romanian pages only (exclude /en/, /ro/, /sv/, /de/) -->
+<!-- Filter Romanian pages only (exclude /en/, /ro/, /sv/, /de/, /craiova.html) -->
 {% assign romanian_tiles = '' | split: '' %}
 {% for tile in tiles %}
-  {% unless tile.url contains '/en/' or tile.url contains '/ro/' or tile.url contains '/sv/' or tile.url contains '/de/' %}
+  {% unless tile.url contains '/en/' or tile.url contains '/ro/' or tile.url contains '/sv/' or tile.url contains '/de/' or tile.url contains '/craiova.html' %}
     {% assign romanian_tiles = romanian_tiles | push: tile %}
   {% endunless %}
 {% endfor %}
