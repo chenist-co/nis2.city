@@ -3,7 +3,7 @@
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+	<a href="{{ "/" | absolute_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>
@@ -14,23 +14,16 @@
 	<ul class="links">
         {% for page in site.pages %}
 		    {% if page.layout == "home" and page.url == "/" %}
-		        <li><a href="{{ "" | absolute_url }}/">{{ page.title }}</a></li>
+		        <li><a href="{{ "/" | absolute_url }}">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
 		{% for page in site.html_pages %}
-		    {% if page.layout != "home" and page.nav-menu == true and page.url contains "/ro/" == false and page.url contains "/sv/" == false and page.url contains "/de/" == false %}
+		    {% if page.layout != "home" and page.nav-menu == true and page.url contains "/en/" == false %}
 		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 		    {% endif %}
 		{% endfor %}
 	</ul>
 	<ul class="actions vertical">
 		<li><a href="/#contact" class="button special fit">Get Started</a></li>
-	</ul>
-	<ul class="links">
-		<li><strong>Language / Limba / Språk / Sprache:</strong></li>
-		<li><a href="{{ "" | absolute_url }}/">🇬🇧 English</a></li>
-		<li><a href="{{ "" | absolute_url }}/ro/">🇷🇴 Română</a></li>
-		<li><a href="{{ "" | absolute_url }}/sv/">🇸🇪 Svenska</a></li>
-		<li><a href="{{ "" | absolute_url }}/de/">🇩🇪 Deutsch</a></li>
 	</ul>
 </nav>

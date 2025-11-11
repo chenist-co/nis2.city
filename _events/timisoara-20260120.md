@@ -1,0 +1,89 @@
+---
+layout: event
+city: Timisoara
+country: Romania
+date: 2026-01-20
+end_date: 2026-01-21
+title: "Workshop Tematic NIS2 - Implementare și Conformitate"
+venue: "Universitatea Politehnica din Timișoara"
+venue_address: "Piața Victoriei, 2, Timișoara, 300006, Romania"
+venue_lat: 45.7472
+venue_lng: 21.2272
+sector: Sănătate
+topics: [Tabletop Exercises, Governance Risk Management, Incident Response, Compliance Assessment]
+tags: [stiri, evenimente, cybersecurity workshop, Directiva NIS, DNSC, awareness NIS2, rezilienta, securitate cibernetica]
+registration_url: "https://ec.europa.eu/eusurvey/runner/DNSC_NIS2_Workshops"
+price: "Gratuit"
+early_bird_price: ""
+early_bird_deadline: ""
+---
+
+Directoratul Național de Securitate Cibernetică (DNSC), în calitate de autoritate competentă responsabilă cu securitatea cibernetică și cu sarcinile de supraveghere și asigurare a respectării măsurilor pentru un nivel comun ridicat de securitate cibernetică, are onoarea de a vă invita să participați la seria de workshopuri tematice dedicate implementării NIS2.
+
+## Invitație DNSC pentru Workshopul Tematic NIS2
+
+Acest workshop face parte din seria națională de evenimente DNSC dedicate implementării **Ordonanței de Urgență nr. 155/2024**, cu modificările și completările ulterioare.
+
+Aceste workshopuri tematice sunt dedicate sectoarelor **Sănătate, Transporturi, Energie și Administrație publică**.
+
+## Despre Program
+
+Acest demers face parte din eforturilor DNSC de sprijinire a entităților atât din sectorul privat, cât și cel public în implementarea cerințelor Directivei NIS2 (și a cadrului legislativ național de transpunere) și în consolidarea rezilienței cibernetice la nivel național. 
+
+În acest demers, DNSC este sprijinit de către **ENISA – Agenția Uniunii Europene pentru Securitate Cibernetică** prin intermediul programului „Cybersecurity Support Action".
+
+## Structura Evenimentului
+
+Evenimentele sunt structurate pe durata a **două zile** și includ exerciții de tip **Tabletop (TTX)**, concepute pentru:
+
+- **Consolidarea capacităților operaționale**
+- **Îmbunătățirea proceselor de guvernanță și gestionare a riscurilor**
+- **Testarea proceselor de răspuns la incidente**
+- **Evaluarea gradului de conformitate și a nivelului de reziliență cibernetice**
+
+## Public Țintă
+
+Workshopurile se adresează:
+
+- **Persoanei responsabile cu securitatea rețelelor și sistemelor informatice**
+- **Organelor de conducere a entităților**
+- **Echipei IT**
+- **Departamentelor juridice și de conformitate**
+- **Altor părți interesate relevante** implicate în aplicarea cerințelor NIS2
+
+## Înscriere și Selecție
+
+**Înscrierea participanților** se realizează exclusiv online prin completarea formularului EU Survey disponibil la următorul link:
+
+<div class="registration-section">
+<a href="https://ec.europa.eu/eusurvey/runner/DNSC_NIS2_Workshops" class="button primary" target="_blank">📝 RSVP - Completează Formularul</a>
+<p><em>Link: <a href="https://ec.europa.eu/eusurvey/runner/DNSC_NIS2_Workshops" target="_blank">https://ec.europa.eu/eusurvey/runner/DNSC_NIS2_Workshops</a></em></p>
+</div>
+
+Participanții sunt rugați să completeze formularul cu datele de identificare ale entității și ale persoanelor desemnate. 
+
+### Criterii de Selecție
+
+**Numărul de locuri este limitat la maximum 20 de participanți/sesiune**, selecția fiind realizată conform criteriilor de mai jos, în limita locurilor disponibile:
+
+1. **Principiul „primul venit, primul servit"**
+2. **Prioritate pentru entitățile care nu au participat la edițiile anterioare**
+3. **Prioritate pentru întreprinderile mici și mijlocii (IMM‑uri)**
+4. **Prioritate pentru operatorii și proprietarii de infrastructuri critice**
+
+## Informații Venue
+
+**Universitatea Politehnica din Timișoara**  
+Piața Victoriei, 2, Timișoara, 300006, Romania
+
+Facilități moderne de conferințe universitare în centrul Timișoarei cu legături de transport excelente și opțiuni de cazare.
+
+### Cum să ajungi
+
+- **Cu mașina**: Parcare disponibilă în campus și zone centrale
+- **Transport public**: Tramvaiele 1, 2, 6, 8 opresc în apropiere
+- **Aeroport**: 20 minute cu mașina de la Aeroportul Timișoara
+
+---
+
+*Acest workshop face parte din programul oficial DNSC de implementare NIS2 și este susținut de ENISA prin programul "Cybersecurity Support Action".*

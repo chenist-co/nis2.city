@@ -19,9 +19,11 @@
                 <h1>{{ page.landing-title }}</h1>
             </header>
             <div class="content">
-                <p style="text-transform: uppercase;">{{ site.description }}</p>
+                <p style="text-transform: uppercase;">{{ page.description }}</p>
                 <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                    <li><a href="#one" class="button next scrolly">
+                        {% if page.lang == "ro" %}Începe Acum{% else %}Get Started{% endif %}
+                    </a></li>
                 </ul>
             </div>
         </div>
@@ -36,16 +38,14 @@
         <!-- Two -->
         <section id="two">
             <div class="inner">
-                {% include language-switcher.html %}
-                <header class="major">
-                    <h2>Ready to Achieve NIS2 Compliance?</h2>
-                </header>
-                <p>{{ content }}</p>
-                <ul class="actions">
-                    <li><a href="about.html" class="button next">Learn More About Our Services</a></li>
+                <ul class="actions" style="text-align: center;">
+                    <li><a href="/events.html" class="button next">Vezi Toate Evenimentele</a></li>
                 </ul>
             </div>
         </section>
+
+        <!-- Events Section -->
+        {% include events-section.html %}
 
     </div>
 

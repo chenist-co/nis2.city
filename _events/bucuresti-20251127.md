@@ -1,0 +1,89 @@
+---
+layout: event
+city: Bucuresti
+country: Romania
+date: 2025-11-27
+end_date: 2025-11-28
+title: "Workshop Tematic NIS2 - Implementare și Conformitate"
+venue: "Universitatea Politehnică din București"
+venue_address: "Splaiul Independenței, 313, București, 060042, Romania"
+venue_lat: 44.4323
+venue_lng: 26.0495
+sector: Energie
+topics: [Tabletop Exercises, Governance Risk Management, Incident Response, Compliance Assessment]
+tags: [stiri, evenimente, cybersecurity workshop, Directiva NIS, DNSC, awareness NIS2, rezilienta, securitate cibernetica]
+registration_url: "https://ec.europa.eu/eusurvey/runner/DNSC_NIS2_Workshops"
+price: "Gratuit"
+early_bird_price: ""
+early_bird_deadline: ""
+---
+
+Directoratul Național de Securitate Cibernetică (DNSC), în calitate de autoritate competentă responsabilă cu securitatea cibernetică și cu sarcinile de supraveghere și asigurare a respectării măsurilor pentru un nivel comun ridicat de securitate cibernetică, are onoarea de a vă invita să participați la seria de workshopuri tematice dedicate implementării NIS2.
+
+## Invitație DNSC pentru Workshopul Tematic NIS2
+
+Acest workshop face parte din seria națională de evenimente DNSC dedicate implementării **Ordonanței de Urgență nr. 155/2024**, cu modificările și completările ulterioare.
+
+Aceste workshopuri tematice sunt dedicate sectoarelor **Sănătate, Transporturi, Energie și Administrație publică**.
+
+## Despre Program
+
+Acest demers face parte din eforturile DNSC de sprijinire a entităților atât din sectorul privat, cât și cel public în implementarea cerințelor Directivei NIS2 (și a cadrului legislativ național de transpunere) și în consolidarea rezilienței cibernetice la nivel național. 
+
+În acest demers, DNSC este sprijinit de către **ENISA – Agenția Uniunii Europene pentru Securitate Cibernetică** prin intermediul programului „Cybersecurity Support Action".
+
+## Structura Evenimentului
+
+Evenimentele sunt structurate pe durata a **două zile** și includ exerciții de tip **Tabletop (TTX)**, concepute pentru:
+
+- **Consolidarea capacităților operaționale**
+- **Îmbunătățirea proceselor de guvernanță și gestionare a riscurilor**
+- **Testarea proceselor de răspuns la incidente**
+- **Evaluarea gradului de conformitate și a nivelului de reziliență cibernetice**
+
+## Public Țintă
+
+Workshopurile se adresează:
+
+- **Persoanei responsabile cu securitatea rețelelor și sistemelor informatice**
+- **Organelor de conducere a entităților**
+- **Echipei IT**
+- **Departamentelor juridice și de conformitate**
+- **Altor părți interesate relevante** implicate în aplicarea cerințelor NIS2
+
+## Înscriere și Selecție
+
+**Înscrierea participanților** se realizează exclusiv online prin completarea formularului EU Survey disponibil la următorul link:
+
+<div class="registration-section">
+<a href="https://ec.europa.eu/eusurvey/runner/DNSC_NIS2_Workshops" class="button primary" target="_blank">📝 RSVP - Completează Formularul</a>
+<p><em>Link: <a href="https://ec.europa.eu/eusurvey/runner/DNSC_NIS2_Workshops" target="_blank">https://ec.europa.eu/eusurvey/runner/DNSC_NIS2_Workshops</a></em></p>
+</div>
+
+Participanții sunt rugați să completeze formularul cu datele de identificare ale entității și ale persoanelor desemnate. 
+
+### Criterii de Selecție
+
+**Numărul de locuri este limitat la maximum 20 de participanți/sesiune**, selecția fiind realizată conform criteriilor de mai jos, în limita locurilor disponibile:
+
+1. **Principiul „primul venit, primul servit"**
+2. **Prioritate pentru entitățile care nu au participat la edițiile anterioare**
+3. **Prioritate pentru întreprinderile mici și mijlocii (IMM‑uri)**
+4. **Prioritate pentru operatorii și proprietarii de infrastructuri critice**
+
+## Informații Venue
+
+**Universitatea Politehnică din București**  
+Splaiul Independenței, 313, București, 060042, Romania
+
+Facilități moderne universitare în centrul Bucureștiului cu legături de transport excelente și opțiuni de cazare.
+
+### Cum să ajungi
+
+- **Cu mașina**: Parcare disponibilă în campus și în apropiere
+- **Transport public**: Metrou, autobuze și tramvaie cu multe linii
+- **Tren**: 15 minute cu mașina de la Gara de Nord
+
+---
+
+*Acest workshop face parte din programul oficial DNSC de implementare NIS2 și este susținut de ENISA prin programul "Cybersecurity Support Action".*

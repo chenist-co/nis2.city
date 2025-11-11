@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+    
+
+<body>
+    <script type="text/javascript">document.body.classList.add("is-loading");</script>
+
+    {% include header.html %}
+
+    <!-- Main -->
+    <div id="main" class="alt">
+
+        <!-- One -->
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h1>{{ page.city }}: {{ page.title }}</h1>
+                </header>
+                
+                <div class="event-details">
+                    <p><strong>📍 Location:</strong> {{ page.venue }}{% if page.venue_address %}, {{ page.venue_address }}{% else %}, {{ page.city }}, {{ page.country }}{% endif %}</p>
+                    <p><strong>📅 Date:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
+                    {% if page.topics %}
+                    <p><strong>🎯 Topics:</strong> 
+                        {% for topic in page.topics %}
+                            <span class="topic-tag">{{ topic }}</span>{% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
+                    </p>
+                    {% endif %}
+                    {% if page.price %}
+                    <p><strong>💰 Price:</strong> {{ page.price }}
+                        {% if page.early_bird_price and page.early_bird_price != "" %} (Early Bird: {{ page.early_bird_price }} until {{ page.early_bird_deadline | date: "%B %d, %Y" }}){% endif %}
+                    </p>
+                    {% endif %}
+                    {% if page.tags %}
+                    <p><strong>🏷️ Tags:</strong>
+                        {% for tag in page.tags %}
+                            <span class="event-tag">{{ tag }}</span>
+                        {% endfor %}
+                    </p>
+                    {% endif %}
+                </div>
+
+                {% if page.registration_url and page.registration_url != "#" %}
+                <div class="event-registration">
+                    <a href="{{ page.registration_url }}" class="button primary">Register Now</a>
+                </div>
+                {% endif %}
+
+                <div class="event-content">
+                    {{ content }}
+                </div>
+
+
+                <div class="event-navigation">
+                    <a href="/events/" class="button">← Back to Events</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    {% include footer.html %}
+
+    <style>
+    .event-details {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+        border-left: 4px solid #9bf1ff;
+        margin: 2rem 0;
+        border-radius: 4px;
+    }
+
+    .topic-tag {
+        background: rgba(155, 241, 255, 0.1);
+        padding: 0.3rem 0.6rem;
+        border-radius: 3px;
+        font-size: 0.9rem;
+        border: 1px solid rgba(155, 241, 255, 0.2);
+    }
+
+    .event-tag {
+        background: rgba(255, 193, 7, 0.1);
+        color: #ffc107;
+        padding: 0.2rem 0.5rem;
+        border-radius: 3px;
+        font-size: 0.8rem;
+        border: 1px solid rgba(255, 193, 7, 0.2);
+        display: inline-block;
+        margin: 0.1rem 0.2rem 0.1rem 0;
+    }
+
+    .event-registration {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .event-navigation {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .event-content {
+        margin: 2rem 0;
+        line-height: 1.7;
+    }
+
+    .event-content h2 {
+        color: #9bf1ff;
+        font-size: 1.5rem;
+        margin: 2rem 0 1rem 0;
+        border-bottom: 2px solid rgba(155, 241, 255, 0.3);
+        padding-bottom: 0.5rem;
+    }
+
+    .event-content h3 {
+        color: #9bf1ff;
+        font-size: 1.2rem;
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+    .event-content p {
+        margin: 1rem 0;
+        color: #ffffff;
+    }
+
+    .event-content ul {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+    }
+
+    .event-content li {
+        margin: 0.5rem 0;
+        color: #ffffff;
+        list-style-type: disc;
+    }
+
+    .event-content strong {
+        color: #9bf1ff;
+        font-weight: bold;
+    }
+
+    .event-content em {
+        color: #9bf1ff;
+        font-style: italic;
+    }
+
+    /* Agenda styling - better targeting for agenda items */
+    .event-content p strong:first-child {
+        color: #9bf1ff;
+    }
+
+    .event-content p:contains("**"):not(:first-child) {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 0.8rem 1rem;
+        margin: 0.5rem 0;
+        border-left: 3px solid rgba(155, 241, 255, 0.4);
+        border-radius: 0 4px 4px 0;
+    }
+
+    /* Time-based agenda items */
+    .event-content p:contains(":") {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 0.8rem 1rem;
+        margin: 0.3rem 0;
+        border-left: 3px solid rgba(155, 241, 255, 0.4);
+        border-radius: 0 4px 4px 0;
+    }
+
+    /* Better spacing for venue section */
+    .event-content p:last-of-type {
+        margin-bottom: 2rem;
+    }
+
+    /* Better list styling */
+    .event-content ul li {
+        background: rgba(255, 255, 255, 0.02);
+        padding: 0.5rem 0.8rem;
+        margin: 0.3rem 0;
+        border-left: 2px solid rgba(155, 241, 255, 0.3);
+        border-radius: 0 3px 3px 0;
+    }
+
+    /* Venue section special styling */
+    .event-content h2 + p + p {
+        background: rgba(155, 241, 255, 0.05);
+        padding: 1rem;
+        border-radius: 6px;
+        border: 1px solid rgba(155, 241, 255, 0.2);
+    }
+
+
+    /* Registration section styling */
+    .registration-section {
+        background: rgba(155, 241, 255, 0.05);
+        padding: 2rem;
+        border-radius: 8px;
+        margin: 2rem 0;
+        text-align: center;
+        border: 1px solid rgba(155, 241, 255, 0.2);
+    }
+
+    .registration-section .button {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        display: inline-block;
+    }
+
+    .registration-section p {
+        margin: 1rem 0 0 0;
+        font-size: 0.9rem;
+    }
+
+    .registration-section em {
+        color: #999;
+    }
+    </style>
+
+
+</body>
+
+</html>

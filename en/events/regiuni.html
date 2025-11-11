@@ -1,0 +1,409 @@
+---
+layout: page
+title: Evenimente în regiunea ta
+description: Găsește evenimente NIS2 de securitate cibernetică în orașul tău din România
+nav-menu: true
+show_tile: true
+---
+
+<style>
+.region-hero {
+    background: linear-gradient(135deg, rgba(108, 92, 231, 0.9), rgba(155, 241, 255, 0.8));
+    padding: 4rem 0;
+    text-align: center;
+    margin: -2rem -2rem 3rem -2rem;
+}
+
+.region-hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.region-hero p {
+    color: rgba(255,255,255,0.95);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.city-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.city-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #6C5CE7, #9bf1ff);
+}
+
+.city-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(108, 92, 231, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(108, 92, 231, 0.2);
+}
+
+.city-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.city-icon {
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+.city-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ddd;
+    margin: 0;
+}
+
+.city-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.stat-number {
+    font-weight: 600;
+    color: #9bf1ff;
+    font-size: 1.1rem;
+}
+
+.event-preview {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(108, 92, 231, 0.05);
+    border-radius: 4px;
+    border-left: 3px solid #6C5CE7;
+}
+
+.event-preview h4 {
+    margin: 0 0 0.5rem 0;
+    color: #ddd;
+    font-size: 1rem;
+}
+
+.event-preview .date {
+    color: #9bf1ff;
+    font-size: 0.9rem;
+}
+
+.city-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.newsletter-section {
+    background: linear-gradient(135deg, rgba(108, 92, 231, 0.1), rgba(155, 241, 255, 0.05));
+    padding: 3rem;
+    border-radius: 12px;
+    margin: 4rem 0;
+    border: 1px solid rgba(108, 92, 231, 0.2);
+    text-align: center;
+}
+
+.newsletter-section h3 {
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.newsletter-section p {
+    color: #aaa;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    color: white;
+    min-width: 250px;
+}
+
+.newsletter-form input::placeholder {
+    color: #aaa;
+}
+
+.newsletter-form button {
+    background: #6C5CE7;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #5b4bd6;
+    transform: translateY(-2px);
+}
+
+.info-section {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 3rem;
+    border-radius: 12px;
+    margin: 4rem 0;
+    border-left: 4px solid #9bf1ff;
+}
+
+.info-section h3 {
+    color: #9bf1ff;
+    margin-bottom: 1.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.info-item h4 {
+    color: #ddd;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .region-hero {
+        padding: 2rem 1rem;
+        margin: -1rem -1rem 2rem -1rem;
+    }
+    
+    .region-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .cities-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .city-stats {
+        gap: 1rem;
+    }
+    
+    .city-actions {
+        flex-direction: column;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .newsletter-form input {
+        min-width: auto;
+    }
+}
+</style>
+
+<!-- Main -->
+<div id="main" class="alt">
+
+    <!-- Hero -->
+    <div class="region-hero">
+        <div class="inner">
+            <h1>🌍 Evenimente în Regiunea Ta</h1>
+            <p>Găsește cele mai apropiate evenimente NIS2 de securitate cibernetică și conformitate în orașul tău din România</p>
+        </div>
+    </div>
+
+    <!-- One -->
+    <section id="one">
+        <div class="inner">
+            
+            <!-- Cities Grid -->
+            <div class="cities-grid">
+                {% assign all_cities = site.events | map: 'city' | uniq | sort %}
+                {% for city in all_cities %}
+                    {% assign city_events = site.events | where: 'city', city %}
+                    {% assign upcoming_events = city_events | where_exp: "event", "event.date >= site.time" %}
+                    {% assign next_event = upcoming_events | first %}
+                    
+                    <div class="city-card">
+                        <div class="city-header">
+                            <div class="city-icon">
+                                {% if city == 'Bucuresti' %}🏛️
+                                {% elsif city == 'Constanta' %}⚓
+                                {% elsif city == 'Craiova' %}🌾
+                                {% elsif city == 'Iasi' %}🎓
+                                {% elsif city == 'Cluj' %}🏰
+                                {% elsif city == 'Timisoara' %}🌹
+                                {% elsif city == 'Brasov' %}🏔️
+                                {% else %}🏙️
+                                {% endif %}
+                            </div>
+                            <h3 class="city-name">{{ city }}</h3>
+                        </div>
+                        
+                        <div class="city-stats">
+                            <div class="stat">
+                                <span>📅</span>
+                                <span class="stat-number">{{ city_events.size }}</span>
+                                <span>evenimente</span>
+                            </div>
+                            <div class="stat">
+                                <span>🎯</span>
+                                <span class="stat-number">{{ upcoming_events.size }}</span>
+                                <span>viitoare</span>
+                            </div>
+                        </div>
+                        
+                        {% if next_event %}
+                        <div class="event-preview">
+                            <h4>📍 Următorul eveniment:</h4>
+                            <div>{{ next_event.title | truncatewords: 8 }}</div>
+                            <div class="date">
+                                {{ next_event.date | date: "%d %B %Y" }}
+                                {% if next_event.end_date and next_event.end_date != next_event.date %}
+                                    - {{ next_event.end_date | date: "%d %B %Y" }}
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% else %}
+                        <div class="event-preview">
+                            <h4>📅 Urmărește pentru actualizări</h4>
+                            <div>Nu sunt evenimente programate în prezent</div>
+                        </div>
+                        {% endif %}
+                        
+                        <div class="city-actions">
+                            <a href="/events.html?city={{ city | downcase | replace: ' ', '-' }}" class="button primary">
+                                Vezi Toate Evenimentele
+                            </a>
+                            {% if upcoming_events.size > 0 %}
+                            <a href="{{ next_event.url }}" class="button">
+                                Detalii
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <h3>📧 Abonează-te la Newsletter</h3>
+                <p>Primește notificări despre evenimentele NIS2 din regiunea ta și cele mai importante actualizări despre securitatea cibernetică în România.</p>
+                
+                <form class="newsletter-form" action="#" method="post">
+                    <input type="email" placeholder="Adresa ta de email..." required>
+                    <button type="submit">Abonează-te</button>
+                </form>
+                
+                <div style="margin-top: 1.5rem; font-size: 0.9rem; color: #888;">
+                    <p>✅ Actualizări săptămânale despre evenimente NIS2<br>
+                    ✅ Informații despre noi location-uri și date<br>
+                    ✅ Ghiduri gratuite de conformitate<br>
+                    ✅ Poți să te dezabonezi oricând</p>
+                </div>
+            </div>
+
+            <!-- Information Section -->
+            <div class="info-section">
+                <h3>🎯 De ce să participi la evenimentele NIS2?</h3>
+                <p>Evenimentele oficiale DNSC sunt cea mai bună modalitate de a înțelege cerințele specifice ale sectorului tău și de a te pregăti pentru conformitatea NIS2.</p>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h4>🎓 Expertiza Oficială</h4>
+                        <p>Învață direct de la experții DNSC și ENISA, autoritățile competente în securitatea cibernetică.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4>🔧 Exerciții Practice</h4>
+                        <p>Participă la exerciții de tip Tabletop (TTX) pentru a-ți testa planurile de răspuns la incidente.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4>🤝 Networking</h4>
+                        <p>Conectează-te cu alte organizații din sectorul tău și împărtășește cele mai bune practici.</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4>🆓 Gratuit</h4>
+                        <p>Toate evenimentele oficiale DNSC sunt gratuite și oferă ghidanță autoritară pentru conformitate.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div style="text-align: center; margin: 4rem 0;">
+                <h3 style="margin-bottom: 2rem; color: #ddd;">Pregătit să începi?</h3>
+                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="/events.html" class="button special" style="background: #27AE60;">
+                        📅 Vezi Toate Evenimentele
+                    </a>
+                    <a href="/about.html" class="button primary">
+                        📚 Află despre NIS2
+                    </a>
+                    <a href="https://www.dnsc.ro/pagini/inregistrare-entitati" class="button" target="_blank">
+                        📝 Înregistrare DNSC
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>

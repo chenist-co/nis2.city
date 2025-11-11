@@ -1,0 +1,553 @@
+---
+layout: landing
+title: All Events
+description: 'Join our NIS2 cybersecurity workshops across Europe'
+image: assets/images/training-event.jpg
+nav-menu: true
+---
+
+<style>
+.event-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.event-container:nth-child(even) {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.event-map {
+    flex: 1;
+    min-width: 0;
+}
+
+.event-map iframe {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hide OpenStreetMap attribution and clean layout */
+.event-map {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-map iframe {
+    margin-bottom: -5px;
+}
+
+
+.event-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event-header {
+    margin-bottom: 1rem;
+}
+
+.event-header h3 {
+    margin: 0 0 0.4rem 0;
+    color: #ddd;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.event-city {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ccc;
+    padding: 0.2rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.event-details-compact {
+    margin-bottom: 1rem;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 0.4rem;
+}
+
+
+.detail-row .label {
+    font-weight: 500;
+    color: #aaa;
+    min-width: 3.5rem;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+}
+
+.detail-row .value {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.city-filter {
+    color: #9bf1ff;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dotted #9bf1ff;
+    transition: all 0.3s ease;
+}
+
+.city-filter:hover {
+    color: #6C5CE7;
+    border-bottom-color: #6C5CE7;
+    text-shadow: 0 0 8px rgba(108, 92, 231, 0.5);
+}
+
+.country-filter {
+    color: #9bf1ff;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dotted #9bf1ff;
+    transition: all 0.3s ease;
+}
+
+.country-filter:hover {
+    color: #6C5CE7;
+    border-bottom-color: #6C5CE7;
+    text-shadow: 0 0 8px rgba(108, 92, 231, 0.5);
+}
+
+.detail-row .value.price {
+    background: rgba(255, 255, 255, 0.08);
+    color: #aaa;
+    padding: 0.15rem 0.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-row .value.sector {
+    background: rgba(108, 92, 231, 0.1);
+    color: #bbb;
+    padding: 0.15rem 0.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border: 1px solid rgba(108, 92, 231, 0.2);
+}
+
+.event-actions {
+    margin-top: auto;
+}
+
+.event-actions .button.primary {
+    width: 100%;
+    text-align: center;
+    background: #6C5CE7;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.map-actions {
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+.map-actions .button.primary.compact {
+    background: #333;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    border: 1px solid #555;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.map-actions .button.primary.compact:hover {
+    background: #444;
+    border-color: #666;
+    transform: translateY(-1px);
+}
+
+.topics-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.topic-tag {
+    background: rgba(255, 255, 255, 0.05);
+    color: #999;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Events hero section with background */
+.events-hero {
+    background-image: linear-gradient(rgba(108, 92, 231, 0.5), rgba(108, 92, 231, 0.5)), url('https://images.unsplash.com/photo-1515378791036-0648a814c963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.events-hero .inner {
+    position: relative;
+    z-index: 2;
+}
+
+.events-hero h2 {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.events-hero p {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.events-hero #filter-info {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 4px solid white;
+}
+
+.events-hero #filter-info a {
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .event-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .event-map {
+        order: 2;
+    }
+    
+    .event-info {
+        order: 1;
+    }
+    
+    .events-hero {
+        background-attachment: scroll;
+        min-height: 30vh;
+    }
+    
+    .events-hero h2 {
+        font-size: 2rem;
+    }
+    
+    .events-hero p {
+        font-size: 1rem;
+    }
+}
+</style>
+
+<!-- Main -->
+<div id="main">
+
+<!-- One -->
+<section id="one" class="events-hero">
+    <div class="inner">
+        <header class="major">
+            <h2>NIS2 Cybersecurity Events Across Europe</h2>
+        </header>
+        <p>Join cybersecurity professionals and compliance experts at our comprehensive NIS2 workshops. Our hands-on training sessions provide practical knowledge and networking opportunities for essential and important entities preparing for NIS2 Directive compliance.</p>
+        
+        <div id="filter-info" style="display: none; margin-top: 1rem; padding: 1rem; background: rgba(108, 92, 231, 0.1); border-radius: 6px; border-left: 4px solid #6C5CE7;">
+            <span>Showing events in: <strong id="filtered-city"></strong></span>
+            <a href="#" id="clear-filter" style="margin-left: 1rem; color: #9bf1ff; text-decoration: none;">Show All Events</a>
+        </div>
+        
+        <!-- Sector Filters -->
+        <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.02); border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.05);">
+            <h4 style="margin-bottom: 1rem; color: #ddd;">Filter by Sector:</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                <a href="#" class="sector-filter button" data-sector="all" style="background: #6C5CE7; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">All Sectors</a>
+                <a href="#" class="sector-filter button" data-sector="sănătate" style="background: #333; color: #ccc; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #555;">Sănătate</a>
+                <a href="#" class="sector-filter button" data-sector="transporturi" style="background: #333; color: #ccc; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #555;">Transporturi</a>
+                <a href="#" class="sector-filter button" data-sector="administrație publică" style="background: #333; color: #ccc; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #555;">Administrație Publică</a>
+                <a href="#" class="sector-filter button" data-sector="energie" style="background: #333; color: #ccc; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #555;">Energie</a>
+            </div>
+        </div>
+        
+        <!-- Price Filter -->
+        <div style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.02); border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.05);">
+            <h4 style="margin-bottom: 1rem; color: #ddd;">Filter by Price:</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                <a href="#" class="price-filter button" data-price="all" style="background: #6C5CE7; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">All Events</a>
+                <a href="#" class="price-filter button" data-price="gratuit" style="background: #27AE60; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #219A52;">🆓 FREE Events</a>
+            </div>
+        </div>
+        
+        <h3>What to Expect</h3>
+        <ul>
+            <li><strong>Interactive Workshops</strong> - Hands-on sessions with real-world scenarios</li>
+            <li><strong>Tabletop Exercises</strong> - Practice incident response in controlled environments</li>
+            <li><strong>Expert Guidance</strong> - Learn from certified cybersecurity professionals</li>
+            <li><strong>Networking</strong> - Connect with peers and industry experts</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Two -->
+<section id="two">
+    <div class="inner">
+        {% for event in site.events %}
+        <div class="event-container" data-city="{{ event.city | downcase | replace: ' ', '-' }}" data-country="{{ event.country | downcase | replace: ' ', '-' }}" data-sector="{{ event.sector | downcase }}" data-price="{{ event.price | downcase }}">
+            <div class="event-map">
+                <iframe 
+                    src="https://www.openstreetmap.org/export/embed.html?bbox={{ event.venue_lng | minus: 0.01 }}%2C{{ event.venue_lat | minus: 0.01 }}%2C{{ event.venue_lng | plus: 0.01 }}%2C{{ event.venue_lat | plus: 0.01 }}&layer=mapnik&marker={{ event.venue_lat }}%2C{{ event.venue_lng }}"
+                    width="100%" 
+                    height="250" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0">
+                </iframe>
+                <div class="map-actions">
+                    <a href="{{ event.url | relative_url }}" class="button primary compact">REGISTER NOW</a>
+                </div>
+            </div>
+            <div class="event-info">
+                <header class="event-header">
+                    <h3>{{ event.title }}</h3>
+                    <span class="event-city">{{ event.city }}</span>
+                </header>
+                <div class="event-details-compact">
+                    <div class="detail-row">
+                        <span class="label">Date:</span>
+                        <span class="value">
+                            {% if event.end_date and event.end_date != event.date %}
+                                {{ event.date | date: "%d" }}{% if event.date != event.end_date %}-{{ event.end_date | date: "%d" }}{% endif %} {{ event.date | date: "%B %Y" }}
+                            {% else %}
+                                {{ event.date | date: "%d %B %Y" }}
+                            {% endif %}
+                        </span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Location:</span>
+                        <span class="value"><a href="?city={{ event.city | downcase | replace: ' ', '-' }}" class="city-filter">{{ event.city }}</a>, <a href="?country={{ event.country | downcase | replace: ' ', '-' }}" class="country-filter">{{ event.country }}</a></span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Venue:</span>
+                        <span class="value">{{ event.venue }}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Price:</span>
+                        <span class="value price">{% if event.price == "Gratuit" %}FREE{% else %}{{ event.price }}{% endif %}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Sector:</span>
+                        <span class="value sector">{{ event.sector }}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Topics:</span>
+                        <div class="topics-list">
+                            {% for topic in event.topics %}
+                            <span class="topic-tag">{{ topic }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    let activeSectorFilter = 'all';
+    let activePriceFilter = 'all';
+    
+    // Get URL parameters
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+    
+    // Apply all active filters
+    function applyFilters(city, country) {
+        const containers = document.querySelectorAll('.event-container');
+        const filterInfo = document.getElementById('filter-info');
+        const filteredCity = document.getElementById('filtered-city');
+        
+        containers.forEach(container => {
+            let showContainer = true;
+            
+            // City/country filter
+            if (city || country) {
+                const cityMatch = city && container.dataset.city === city;
+                const countryMatch = country && container.dataset.country === country;
+                showContainer = showContainer && (cityMatch || countryMatch);
+            }
+            
+            // Sector filter
+            if (activeSectorFilter !== 'all') {
+                showContainer = showContainer && container.dataset.sector === activeSectorFilter;
+            }
+            
+            // Price filter
+            if (activePriceFilter !== 'all') {
+                showContainer = showContainer && container.dataset.price === activePriceFilter;
+            }
+            
+            container.style.display = showContainer ? 'flex' : 'none';
+        });
+        
+        // Show filter info for city/country only
+        if (city || country) {
+            const filterText = city ? 
+                city.charAt(0).toUpperCase() + city.slice(1).replace('-', ' ') :
+                country.charAt(0).toUpperCase() + country.slice(1).replace('-', ' ');
+            filteredCity.textContent = filterText;
+            filterInfo.style.display = 'block';
+        } else {
+            filterInfo.style.display = 'none';
+        }
+    }
+    
+    // Update filter button styles
+    function updateFilterButtons() {
+        // Update sector filter buttons
+        document.querySelectorAll('.sector-filter').forEach(btn => {
+            if (btn.dataset.sector === activeSectorFilter) {
+                btn.style.background = '#6C5CE7';
+                btn.style.color = 'white';
+            } else {
+                btn.style.background = '#333';
+                btn.style.color = '#ccc';
+            }
+        });
+        
+        // Update price filter buttons
+        document.querySelectorAll('.price-filter').forEach(btn => {
+            if (btn.dataset.price === activePriceFilter) {
+                if (btn.dataset.price === 'gratuit') {
+                    btn.style.background = '#27AE60';
+                } else {
+                    btn.style.background = '#6C5CE7';
+                }
+                btn.style.color = 'white';
+            } else {
+                btn.style.background = '#333';
+                btn.style.color = '#ccc';
+            }
+        });
+    }
+    
+    // Filter events by city or country
+    function filterEvents(city, country) {
+        applyFilters(city, country);
+    }
+    
+    // Handle sector filter clicks
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('sector-filter')) {
+            e.preventDefault();
+            activeSectorFilter = e.target.dataset.sector;
+            updateFilterButtons();
+            const city = getUrlParameter('city');
+            const country = getUrlParameter('country');
+            applyFilters(city, country);
+        }
+        
+        // Handle price filter clicks
+        if (e.target.classList.contains('price-filter')) {
+            e.preventDefault();
+            activePriceFilter = e.target.dataset.price;
+            updateFilterButtons();
+            const city = getUrlParameter('city');
+            const country = getUrlParameter('country');
+            applyFilters(city, country);
+        }
+    });
+
+    // Handle city and country filter clicks
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('city-filter') || e.target.classList.contains('country-filter')) {
+            e.preventDefault();
+            const url = new URL(e.target.href);
+            const city = url.searchParams.get('city');
+            const country = url.searchParams.get('country');
+            
+            // Update URL without page reload
+            let newUrl = window.location.pathname;
+            if (city) {
+                newUrl += '?city=' + city;
+            } else if (country) {
+                newUrl += '?country=' + country;
+            }
+            
+            history.pushState({city: city, country: country}, '', newUrl);
+            
+            filterEvents(city, country);
+        }
+    });
+    
+    // Handle clear filter
+    document.getElementById('clear-filter').addEventListener('click', function(e) {
+        e.preventDefault();
+        history.pushState({}, '', window.location.pathname);
+        filterEvents(null, null);
+    });
+    
+    // Handle browser back/forward
+    window.addEventListener('popstate', function(e) {
+        const city = getUrlParameter('city');
+        const country = getUrlParameter('country');
+        filterEvents(city, country);
+    });
+    
+    // Initial filter on page load
+    const initialCity = getUrlParameter('city');
+    const initialCountry = getUrlParameter('country');
+    if (initialCity || initialCountry) {
+        filterEvents(initialCity, initialCountry);
+    }
+    
+    // Initialize filter button styles
+    updateFilterButtons();
+});
+</script>

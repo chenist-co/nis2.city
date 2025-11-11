@@ -1,0 +1,109 @@
+<!-- Events Section -->
+<section id="events" style="background: rgba(255, 255, 255, 0.02); padding: 4rem 0;">
+    <div class="inner">
+        <header class="major">
+            <h2>Evenimente NIS2 în România</h2>
+        </header>
+        <p>Participă la workshopurile oficiale DNSC pentru implementarea cerințelor NIS2. Sesiunile noastre hands-on oferă cunoștințe practice și oportunități de networking pentru entitățile esențiale și importante care se pregătesc pentru conformitatea cu Directiva NIS2.</p>
+        
+        <!-- Event Highlights -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0;">
+            <div style="background: rgba(108, 92, 231, 0.1); padding: 2rem; border-radius: 8px; border-left: 4px solid #6C5CE7; text-align: center;">
+                <h4 style="color: #9bf1ff; margin-bottom: 1rem;">🎓 Expert Training</h4>
+                <p>Workshopuri interactive cu scenarii din lumea reală</p>
+            </div>
+            <div style="background: rgba(155, 241, 255, 0.1); padding: 2rem; border-radius: 8px; border-left: 4px solid #9bf1ff; text-align: center;">
+                <h4 style="color: #6C5CE7; margin-bottom: 1rem;">🔧 Tabletop Exercises</h4>
+                <p>Practică răspunsul la incidente în medii controlate</p>
+            </div>
+            <div style="background: rgba(39, 174, 96, 0.1); padding: 2rem; border-radius: 8px; border-left: 4px solid #27AE60; text-align: center;">
+                <h4 style="color: #27AE60; margin-bottom: 1rem;">🆓 Gratuit</h4>
+                <p>Toate evenimentele DNSC sunt complet gratuite</p>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 8px; border-left: 4px solid #ddd; text-align: center;">
+                <h4 style="color: #ddd; margin-bottom: 1rem;">🤝 Networking</h4>
+                <p>Conectează-te cu experți și colegi din industrie</p>
+            </div>
+        </div>
+
+        <!-- Recent Events Preview -->
+        <div style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 2rem;">Evenimente Recente</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                {% assign upcoming_events = site.events | where_exp: "event", "event.date >= site.time" | sort: "date" | limit: 3 %}
+                {% if upcoming_events.size > 0 %}
+                    {% for event in upcoming_events %}
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255, 255, 255, 0.05)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.02)'">
+                        <div style="margin-bottom: 1rem;">
+                            <h4 style="margin: 0; color: #ddd; font-size: 1.1rem;">{{ event.city }}</h4>
+                            <p style="margin: 0; color: #9bf1ff; font-size: 0.9rem;">
+                                {% if event.end_date and event.end_date != event.date %}
+                                    {{ event.date | date: "%d" }}-{{ event.end_date | date: "%d %B %Y" }}
+                                {% else %}
+                                    {{ event.date | date: "%d %B %Y" }}
+                                {% endif %}
+                            </p>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <span style="background: rgba(108, 92, 231, 0.2); color: #9bf1ff; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">{{ event.sector }}</span>
+                        </div>
+                        <p style="color: #ccc; line-height: 1.6; margin-bottom: 1.5rem;">{{ event.title | truncatewords: 8 }}</p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="{{ event.url }}" style="background: #6C5CE7; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">Detalii</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    {% assign recent_events = site.events | sort: "date" | reverse | limit: 3 %}
+                    {% for event in recent_events %}
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem; opacity: 0.7;">
+                        <div style="margin-bottom: 1rem;">
+                            <h4 style="margin: 0; color: #aaa; font-size: 1.1rem;">{{ event.city }}</h4>
+                            <p style="margin: 0; color: #888; font-size: 0.9rem;">
+                                {% if event.end_date and event.end_date != event.date %}
+                                    {{ event.date | date: "%d" }}-{{ event.end_date | date: "%d %B %Y" }}
+                                {% else %}
+                                    {{ event.date | date: "%d %B %Y" }}
+                                {% endif %}
+                            </p>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <span style="background: rgba(255, 255, 255, 0.1); color: #aaa; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.8rem;">{{ event.sector }}</span>
+                        </div>
+                        <p style="color: #999; line-height: 1.6; margin-bottom: 1.5rem;">{{ event.title | truncatewords: 8 }}</p>
+                        <a href="{{ event.url }}" style="background: #555; color: #ccc; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">Vezi Detalii</a>
+                    </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="text-align: center; margin-top: 3rem; padding: 3rem; background: linear-gradient(135deg, rgba(108, 92, 231, 0.1), rgba(155, 241, 255, 0.05)); border-radius: 12px; border: 1px solid rgba(108, 92, 231, 0.2);">
+            <h3 style="color: #ddd; margin-bottom: 1.5rem;">Pregătit să începi?</h3>
+            <p style="color: #aaa; margin-bottom: 2rem;">Descoperă toate evenimentele disponibile și găsește cel mai apropiat workshop din regiunea ta.</p>
+            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/events.html" style="background: #6C5CE7; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">📅 Vezi Toate Evenimentele</a>
+                <a href="/events/regiuni.html" style="background: #27AE60; color: white; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">🌍 Evenimente în Regiunea Ta</a>
+                <a href="/about.html" style="background: transparent; color: #9bf1ff; padding: 1rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; border: 1px solid #9bf1ff; transition: all 0.3s ease;">📚 Află despre NIS2</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+@media screen and (max-width: 768px) {
+    #events .inner > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+    }
+    
+    #events div[style*="display: flex"][style*="flex-wrap: wrap"] {
+        flex-direction: column !important;
+    }
+    
+    #events a[style*="padding: 1rem 2rem"] {
+        padding: 0.8rem 1.5rem !important;
+        font-size: 0.9rem !important;
+    }
+}
+</style>

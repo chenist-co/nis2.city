@@ -1,11 +1,11 @@
 # site settings
-title: chen.ist
-subtitle: NIS2 Compliance Services
-email: nis2@chen.ist
-description: Expert NIS2 Directive compliance and cybersecurity governance services<br /> for essential and important entities.
+title: nis2.city
+subtitle: NIS2 Cybersecurity Events
+email: office@nis2.city
+description: Evenimente NIS2 de securitate cibernetică în orașul tău din România<br />Te ajutăm să obții conformitatea prin workshopuri hands-on și ghidanță de specialitate.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nis2.chen.ist" # the base hostname & protocol for your site
-author:
+url: "https://nis2.city" # the base hostname & protocol for your site
+author: CHENIST Cybersecurity
 street_address: Str. Filantropiei, 1-3
 city: Craiova
 state:
@@ -26,8 +26,23 @@ socials:
   LinkedIn: https://linkedin.com/in/chenistsec
   Twitter: https://twitter.com/chenistsec
 
+# collections
+collections:
+  events:
+    output: true
+    permalink: /events/:name/
+
+# defaults
+defaults:
+  - scope:
+      path: "_events"
+      type: "events"
+    values:
+      layout: "event"
+
 # build settings
 markdown: kramdown
+future: true
 
 sass:
   style: compressed
