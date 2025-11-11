@@ -30,7 +30,7 @@
                     {% if page.topics %}
                     <p><strong>🎯 Topics:</strong> 
                         {% for topic in page.topics %}
-                            <span class="topic-tag">{{ topic }}</span>{% unless forloop.last %}, {% endunless %}
+                            <span class="topic-tag">{{ topic }}</span>{% unless forloop.last %} {% endunless %}
                         {% endfor %}
                     </p>
                     {% endif %}
