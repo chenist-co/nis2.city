@@ -2,6 +2,8 @@
 title: nis2.city
 subtitle: NIS2 Cybersecurity Events
 email: office@nis2.city
+lang: ro
+locale: ro_RO
 description: Evenimente NIS2 de securitate cibernetică în orașul tău din România<br />Te ajutăm să obții conformitatea prin workshopuri hands-on și ghidanță de specialitate.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nis2.city" # the base hostname & protocol for your site
@@ -48,7 +50,16 @@ sass:
   style: compressed
 
 exclude:
+- Gemfile
+- Gemfile.lock
+- vendor
+- bin
 - "*.gemspec"
 - LICENSE.md
 - CONTRIBUTING.md
 - README.md 
+
+# loaded by GitHub Pages (which ignores the Gemfile) and by local builds alike
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
