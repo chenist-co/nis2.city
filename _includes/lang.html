@@ -1,0 +1,3 @@
+{%- comment -%} page language for <html lang>: front matter "lang", else the language folder, else the site default {%- endcomment -%}
+{%- assign seg = page.url | split: '/' -%}
+{%- if page.lang -%}{{ page.lang }}{%- elsif seg[1] == 'de' or seg[1] == 'ro' or seg[1] == 'sv' or seg[1] == 'en' -%}{{ seg[1] }}{%- else -%}{{ site.lang | default: 'ro' }}{%- endif -%}

@@ -4,7 +4,7 @@
     html5up.net | @ajlkn
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
   -->
-<html>
+<html lang="{% include lang.html %}">
 
   {% include head.html %}
 
@@ -24,7 +24,7 @@
 	  <header class="major">
 	    <h1>{{ post.title }}</h1>
 	  </header>
-	  {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
+	  {% if post.image %}<span class="image main"><img loading="lazy" decoding="async" src="{{ post.image | relative_url }}" alt="" /></span>{% endif %}
 	  {% if post.date %}<p>{{ post.date }}</p>{% endif %}
 	  <p>{{ post.content }}</p>
 	  {% endif %}
